@@ -1,0 +1,11 @@
+inicio () {
+entero a, b;
+caracter c;
+// este es un
+comentario
+c= "Hola MUNDO";
+mostrar (c);
+mostrar ("hola
+mundo");
+int-;
+}
