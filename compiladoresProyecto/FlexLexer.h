@@ -44,6 +44,8 @@
 //      #include <FlexLexer.h>
 //      ...
 
+
+
 #ifndef __FLEX_LEXER_H
 // Never included before - need to define base class.
 #define __FLEX_LEXER_H
@@ -142,7 +144,7 @@ public:
   virtual int yylex();
   virtual void switch_streams( std::istream& new_in, std::ostream& new_out );
   virtual void switch_streams( std::istream* new_in = 0, std::ostream* new_out = 0 );
-  virtual int yywrap();
+ // virtual int yywrap();
 
 protected:
   virtual int LexerInput( char* buf, int max_size );

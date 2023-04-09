@@ -1,0 +1,7 @@
+<tr class= "error" ><td>1</td>
+<td>#</td>
+<td>ERROR LEXICO, #</td>
+<td>1</td>
+<td>2</td>
+
+<td><p class = "status cancelled">No definido</p></td> </tr>

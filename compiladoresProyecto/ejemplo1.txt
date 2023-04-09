@@ -1,11 +1,17 @@
 inicio () {
+#
 entero a, b;
 caracter c;
+'22/02/2002';
+'l'
 // este es un
 comentario
 c= "Hola MUNDO";
 mostrar (c);
-mostrar ("hola
+mostrar ("h
 mundo");
 int-;
 }
+
+	
+	

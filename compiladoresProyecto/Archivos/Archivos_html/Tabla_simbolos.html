@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla dinamica</title>
+    <link rel="stylesheet" href="../Archivos_staticos/style2.css" />
+  </head>
+
+  <body>
+    <main class="table">
+      <section class="table__header">
+        <h2>Tabla de simbolos</h2>
+        <div class="input-group">
+          <img src="../Archivos_staticos/umgg.png" alt="" />
+        </div>
+      </section>
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th>Id <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Token<span class="icon-arrow">&UpArrow;</span></th>
+              <th>Identificador<span class="icon-arrow">&UpArrow;</span></th>
+              <th>Ejemplo <span class="icon-arrow">&UpArrow;</span></th>
+             
+            </tr>
+          </thead>
+          <tbody>
+      
+            <tr>
+              <td>1</td>
+              <td>FECHA</td>
+              <td>Tipo Fecha</td>
+              <td>22/02/2022</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CARACTERES</td>
+                <td>Tipo Caracter</td>
+                <td>Letras</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ENTERO</td>
+                <td>Numero Entero</td>
+                <td>[0-9]+</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>REAL</td>
+                <td>Numero Real</td>
+                <td>{[0-9]}.{[0-9]}+</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>"inicio"</td>
+                <td>Palabra Reservada</td>
+                <td>inicio</td>
+              </tr>
+              <tr>
+              <td>6</td>
+              <td>"entero"</td>
+              <td>Palabra Reservada</td>
+              <td>entero</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>"caracter"</td>
+                <td>Palabra Reservada</td>
+                <td>caracter</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>"decimal"</td>
+                <td>Palabra Reservada</td>
+                <td>decimal</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>"fecha"</td>
+                <td>Palabra Reservada</td>
+                <td>fecha</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>"mostrar"</td>
+                <td>Palabra Reservada</td>
+                <td>mostrar</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>"asignar"</td>
+                <td>Palabra Reservada</td>
+                <td>asignar</td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>"si"</td>
+                <td>Palabra Reservada</td>
+                <td>si</td>
+              </tr>
+
+              <tr>
+                <td>13</td>
+                <td>"si no"</td>
+                <td>Palabra Reservada</td>
+                <td>si no</td>
+              </tr>
+
+              <tr>
+                <td>14</td>
+                <td>"mientras"</td>
+                <td>Palabra Reservada</td>
+                <td>mientras</td>
+              </tr>
+
+              <tr>
+                <td>15</td>
+                <td>"hacer_mientras"</td>
+                <td>Palabra Reservada</td>
+                <td>hacer_mientras</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>"para"</td>
+                <td>Palabra Reservada</td>
+                <td>para</td>
+              </tr>
+
+              <tr>
+                <td>17</td>
+                <td>"funcion"</td>
+                <td>Palabra Reservada</td>
+                <td>funcion</td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>"procedimiento"</td>
+                <td>Palabra Reservada</td>
+                <td>procedimiento</td>
+              </tr>
+
+
+              <tr>
+                <td>19</td>
+                <td>IDENTIFICADOR</td>
+                <td>Palabra Reservada</td>
+                <td>{LETRA}({LETRA}|{DIGITO}|"_")*</td>
+              </tr>
+
+              <tr>
+                <td>20</td>
+                <td>DIAGONAL</td>
+                <td>Signo division</td>
+                <td>/</td>
+              </tr>
+              
+              <tr>
+                <td>21</td>
+                <td>TEXTO</td>
+                <td>texto</td>
+                <td>"\""({LETRA}|{DIGITO}|"_"|\t|\r|\f|\n|" ")*"\""</td>
+              </tr>
+              
+              <tr>
+                <td>22</td>
+                <td>COMENTARIO</td>
+                <td>Comentario</td>
+                <td>{DIAGONAL}{DIAGONAL}({LETRA}|{DIGITO}|"_"|" ")*</td>
+              </tr>
+              
+              <tr>
+                <td>23</td>
+                <td>"*"</td>
+                <td>Signo Multiplicacion</td>
+                <td>*</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>"-"</td>
+                <td>Signo Resta</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td>25</td>
+                <td>"+"</td>
+                <td>Signo Suma</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>";"</td>
+                <td>Punto y coma</td>
+                <td>;</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>","</td>
+                <td>Coma</td>
+                <td>,</td>
+              </tr>
+
+              <tr>
+                <td>28</td>
+                <td>"("</td>
+                <td>Parentesis abierto</td>
+                <td>(</td>
+              </tr>
+
+              <tr>
+                <td>29</td>
+                <td>")"</td>
+                <td>Parentesis cerrado</td>
+                <td>)</td>
+              </tr>
+
+              <tr>
+                <td>30</td>
+                <td>"{"</td>
+                <td>Llave abierta</td>
+                <td>{</td>
+              </tr>
+
+              <tr>
+                <td>31</td>
+                <td>"}"</td>
+                <td>Llave cerrada</td>
+                <td>}</td>
+              </tr>
+
+              <tr>
+                <td>32</td>
+                <td>"="</td>
+                <td>Signo Igual</td>
+                <td>=</td>
+              </tr>
+
+              <tr>
+                <td>33</td>
+                <td>"<"</td>
+                <td>Signo menor</td>
+                <td><</td>
+              </tr>
+
+              <tr>
+                <td>34</td>
+                <td>">"</td>
+                <td>Signo mayor</td>
+                <td>></td>
+              </tr>
+
+              <tr>
+                <td>35</td>
+                <td>"<="</td>
+                <td>Operador Logico</td>
+                <td><=</td>
+              </tr>
+
+              <tr>
+                <td>36</td>
+                <td>">="</td>
+                <td>Operador Logico</td>
+                <td>>=</td>
+              </tr>
+              <tr>
+                <td>37</td>
+                <td>"=="</td>
+                <td>Operador Logico</td>
+                <td>==</td>
+              </tr>
+
+              <tr>
+                <td>38</td>
+                <td>"!="</td>
+                <td>Operador Logico</td>
+                <td>!=</td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

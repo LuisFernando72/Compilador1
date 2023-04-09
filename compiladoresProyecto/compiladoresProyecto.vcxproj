@@ -140,14 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="compiladoresProyecto.cpp" />
-    <ClCompile Include="Scanner.cpp" />
+    <ClCompile Include="FlexTabla\TablaSimbolos.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="colors.h" />
     <ClInclude Include="FlexLexer.h" />
+    <ClInclude Include="FlexTabla\FlexLexer.h" />
     <ClInclude Include="Operaciones_archivos.h" />
+    <ClInclude Include="otros.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="lexico.l" />
+    <None Include="FlexTabla\tablaSimbolos.l" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

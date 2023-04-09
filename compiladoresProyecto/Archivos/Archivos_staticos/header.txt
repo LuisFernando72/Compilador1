@@ -11,7 +11,7 @@
   <body>
     <main class="table">
       <section class="table__header">
-        <h1>Tabla de simbolos</h1>
+        <h1>Analisis Léxico</h1>
         <div class="input-group">
           <img src="../Archivos_staticos/umgg.png" alt="" />
         </div>
@@ -21,9 +21,10 @@
           <thead>
             <tr>
               <th>Id <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Simbolo <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Token <span class="icon-arrow">&UpArrow;</span></th>
               <th>Tipo <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Nombre <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Longitud <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Linea <span class="icon-arrow">&UpArrow;</span></th>
               <th>Estado <span class="icon-arrow">&UpArrow;</span></th>
             </tr>
           </thead>

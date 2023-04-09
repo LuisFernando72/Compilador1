@@ -144,15 +144,17 @@ tbody tr.hide td p {
 }
 
 .status.delivered {
-  background-color: #86e49d;
-  color: #006b21;
+  background-color: #0947d7;
+  color: #d1d3ed;
 }
 
 .status.cancelled {
-  background-color: #d893a3;
-  color: #b30021;
+  background-color: #ec1b56;
+  color: #e5ccd1;
 }
- 
+ .error{
+  color: rgb(255, 0, 60);
+}
 @media (max-width: 1000px) {
   td:not(:first-of-type) {
     min-width: 12.1rem;

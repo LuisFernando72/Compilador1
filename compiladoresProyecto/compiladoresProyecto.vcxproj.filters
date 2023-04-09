@@ -18,7 +18,7 @@
     <ClCompile Include="compiladoresProyecto.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Scanner.cpp">
+    <ClCompile Include="FlexTabla\TablaSimbolos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,8 +29,17 @@
     <ClInclude Include="FlexLexer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="otros.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="colors.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="FlexTabla\FlexLexer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="lexico.l" />
+    <None Include="FlexTabla\tablaSimbolos.l" />
   </ItemGroup>
 </Project>

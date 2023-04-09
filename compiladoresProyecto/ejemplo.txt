@@ -3,3 +3,5 @@ evaluar(1+1*2);
 evaluar(-(1+1*6/3-5+7));
 evaluar(-(1+1*6/3-5+1*-2));
 evaluar(-(1+1));
+
+	//	cout << "\nid: " << contador << " linea: " << lexer->lineno() << " token: " << lexer->YYText() << " tipo: " << token << " retorno: " << retorno << " Leng: " << lexer->YYLeng() << endl;
