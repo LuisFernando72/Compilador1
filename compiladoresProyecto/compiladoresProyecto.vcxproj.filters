@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="sadas">
+      <UniqueIdentifier>{6d277cea-c58b-45d8-a67b-2904ccbc9dcc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="compiladoresProyecto.cpp">
@@ -21,13 +24,19 @@
     <ClCompile Include="FlexTabla\TablaSimbolos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="AnalisisCompilador\driver.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalisisCompilador\scanner.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalisisCompilador\parser.tab.cc">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Operaciones_archivos.h">
       <Filter>Archivos de origen</Filter>
-    </ClInclude>
-    <ClInclude Include="FlexLexer.h">
-      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="otros.h">
       <Filter>Archivos de origen</Filter>
@@ -38,8 +47,22 @@
     <ClInclude Include="FlexTabla\FlexLexer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="AnalisisCompilador\driver.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalisisCompilador\FlexLexer2.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalisisCompilador\parser.tab.hh">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalisisCompilador\AnalisisLexicoh.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FlexTabla\tablaSimbolos.l" />
+    <None Include="AnalisisCompilador\lexico.l" />
+    <None Include="AnalisisCompilador\parser.yy" />
   </ItemGroup>
 </Project>

@@ -7,7 +7,6 @@
 #include <string.h>
 #include "Operaciones_archivos.h"
 #include <stdio.h> 
-//#include "y.tab.h"
 
 
 #pragma warning(disable:4996)

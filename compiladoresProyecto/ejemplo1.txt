@@ -1,4 +1,4 @@
-inicio () {
+inicio(){
 #
 entero a, b;
 caracter c;

@@ -139,17 +139,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnalisisCompilador\driver.cpp" />
+    <ClCompile Include="AnalisisCompilador\parser.tab.cc" />
+    <ClCompile Include="AnalisisCompilador\scanner.cpp" />
     <ClCompile Include="compiladoresProyecto.cpp" />
     <ClCompile Include="FlexTabla\TablaSimbolos.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnalisisCompilador\driver.h" />
+    <ClInclude Include="AnalisisCompilador\FlexLexer2.h" />
+    <ClInclude Include="AnalisisCompilador\parser.tab.hh" />
+    <ClInclude Include="AnalisisCompilador\AnalisisLexicoh.h" />
     <ClInclude Include="colors.h" />
-    <ClInclude Include="FlexLexer.h" />
     <ClInclude Include="FlexTabla\FlexLexer.h" />
     <ClInclude Include="Operaciones_archivos.h" />
     <ClInclude Include="otros.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AnalisisCompilador\lexico.l" />
+    <None Include="AnalisisCompilador\parser.yy" />
     <None Include="FlexTabla\tablaSimbolos.l" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

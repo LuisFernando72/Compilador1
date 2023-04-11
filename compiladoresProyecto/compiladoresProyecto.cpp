@@ -5,18 +5,19 @@
 #include <string>
 #include <string.h>
 #include "Operaciones_archivos.h"
-#include "FlexLexer.h"
+//#include "FlexLexer.h"
 #include <cstdlib>
 #include <cstdio>
 #include <stdio.h> 
 #include "otros.h"
 #include "colors.h"
-//#include "driver.h"
+//#include "AnalisisCompilador/driver.h"
 //#include "otros.h"
-
+#include "AnalisisCompilador/AnalisisLexicoh.h"
 using namespace std;
 
 //declarando funciones
+
 void init();
 
 int LeerLexer();
@@ -25,6 +26,7 @@ int LeerLexer();
 
 //FUNCIONES A UTILIZAR
 int leerArchivo(string direccion_archivo);
+int AnalisisSintactico(string direccion_archivo);
 
 
 
@@ -34,19 +36,7 @@ void init() {
 	fondo();
 	marco();
 	LeerLexer();
-	system("pause");
-
-	/*float resultado = 0.0;
-	compilador_driver driver;
-	if (driver.parse("ejemplo1.txt")) {
-		printf("La entrada es incorrecta\n");
-	}
-	else {
-		printf("La entrada es correcta\n");
-		
-	}*/
-
-	 
+	/*system("pause");*/
 }
 
 
@@ -54,6 +44,7 @@ int LeerLexer() {
 	_getch();
 	Operaciones_archivos op;
 	string direccionArchivo;
+	AnalisisLexicoh ah;
 	int retorno;
 	gotoxy(25, 4); cout << BLACK << "Ingrese la direccion del archivo: ";
 	getline(cin, direccionArchivo);
@@ -85,7 +76,12 @@ int LeerLexer() {
 				cargando();
 				op.eliminarArchivo("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\B_error_lexico.txt");
 				op.eliminarArchivo("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\analisis_lexico.txt");
+				op.eliminarArchivo("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\eSintactios.txt");
 				leerArchivo(direccionArchivo);
+				ah.IniciarAnalisis(direccionArchivo);
+				int leer3 = op.InsertarHTML("Tabla_errores_sintacticos.html", "header3.txt", "eSintactios.txt", "footer.txt");
+				gotoxy(25, 22); cout << BLACK << "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_errores_sintacticos.html\n\n";
+				gotoxy(25, 21); cout << BLUE << "ANALISIS SINTACTICO:";
 			}
 		}
 
@@ -130,7 +126,7 @@ int leerArchivo(string direccion_archivo) {
 	int retorno1 = op.CrearBody("B_error_lexico.txt", boody_Error);
 	int retorno2 = op.CrearBody("analisis_lexico.txt", boody_tabla);
 	int leer1 = op.InsertarHTML("Tabla_errores_lexico.html", "header2.txt", "B_error_lexico.txt", "footer.txt");
-	int leer2 =op.InsertarHTML("Tabla_analis_lexico.html", "header.txt", "analisis_lexico.txt", "footer.txt");
+	int leer2 = op.InsertarHTML("Tabla_analis_lexico.html", "header.txt", "analisis_lexico.txt", "footer.txt");
 
 
 	if ((leer1 == 1) && (leer2 == 1)) {
@@ -143,15 +139,29 @@ int leerArchivo(string direccion_archivo) {
 		gotoxy(25, 20); cout << BLACK << "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_simbolos.html\n\n";
 
 	}
-	gotoxy(25, 21); cout << BLACK << "Desea volver al inicio[s/n]: ";
-	cin >> n;
-	if ((n == 'N') || (n == 'n')) {
-		exit(0);
+	//gotoxy(25, 21); cout << BLACK << "Desea volver al inicio[s/n]: ";
+	//cin >> n;
+	//if ((n == 'N') || (n == 'n')) {
+	//	exit(0);
+	//}
+	//else {
+	//	init();
+	//}
+	return 1;
+}
+
+int AnalisisSintactico(string direccionArchivo) {
+	/*float resultado = 0.0;
+	compilador_driver driver;
+	if (driver.parse("ejemplo1.txt")) {
+		printf("La entrada es incorrecta\n");
 	}
 	else {
-		init();
-	}
+		printf("La entrada es correcta\n");
+
+	}*/
 	return 1;
+
 }
 
 
