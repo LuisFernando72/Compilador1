@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\</FILEPATH>
+      <FILENAME>parser.tab.hh</FILENAME>
+      <LINE>631</LINE>
+      <COLUMN>59</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>El tipo de enumeración "yy::compilador_parser::symbol_kind::symbol_kind_type" no tiene ámbito. Prefiera "enum class" a "enum" (Enum.3).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\</FILEPATH>
+      <FILENAME>parser.tab.hh</FILENAME>
+      <LINE>2088</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>El tipo de enumeración "yy::compilador_parser::token::token_kind_type" no tiene ámbito. Prefiera "enum class" a "enum" (Enum.3).</DESCRIPTION>
+    <FUNCTION>yy::compilador_parser::by_kind::{ctor}</FUNCTION>
+    <DECORATED>??0by_kind@compilador_parser@yy@@QEAA@W4token_kind_type@token@12@@Z</DECORATED>
+    <FUNCLINE>2088</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -10,6 +10,7 @@
 {
 #include <string>
 #include <stdio.h>
+#include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <stdio.h> 
@@ -25,6 +26,9 @@ class compilador_driver;
 {
 #include "driver.h"
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <string.h>
 }
 %define api.token.prefix {TOK_}
 
@@ -89,16 +93,17 @@ class compilador_driver;
 %type N
 %type O
 
+ 
+%printer {yyoutput << $$; } <*>;
 
-%printer { yyoutput << $$; } <*>;
 %%
 %start META;
 
-META : A;
+META : A  
 
-A: I;
+A: I  
 
-I: "inicio" "(" ")" "{" M "}"
+I: "inicio" "(" ")" "{" M "}"		
    | B "inicio" "(" ")" "{" M "}"
    | "inicio" "(" ")" "{" M "}" B
    | B "inicio" "(" ")" "{" M "}" B;
@@ -234,6 +239,8 @@ AG: L
    |V
    |W
    |X;
+   
+ 
 %%
 
 void yy::compilador_parser::error(const location_type& lugar, const std::string& lexema)
@@ -244,6 +251,4 @@ pagina.open("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresPro
 pagina <<"<tr>"<<"<td>1</td>"<<"<td>Error Sintactico</td>"<<"<td>"<< lugar<<"</td>"<<"<td>"<<lexema<<"<td>"<<"</tr>";
 pagina.close();
 		  
-		  
-
 }

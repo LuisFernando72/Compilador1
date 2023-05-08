@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="AnalisisCompilador\driver.h" />
     <ClInclude Include="AnalisisCompilador\FlexLexer2.h" />
+    <ClInclude Include="AnalisisCompilador\location.hh" />
     <ClInclude Include="AnalisisCompilador\parser.tab.hh" />
     <ClInclude Include="AnalisisCompilador\AnalisisLexicoh.h" />
     <ClInclude Include="colors.h" />

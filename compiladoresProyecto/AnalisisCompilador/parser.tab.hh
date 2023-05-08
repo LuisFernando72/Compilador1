@@ -49,6 +49,7 @@
 
 #include <string>
 #include <stdio.h>
+#include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <stdio.h> 
@@ -56,7 +57,7 @@
 using namespace std;
 class compilador_driver;
 
-#line 60 "parser.tab.hh"
+#line 61 "parser.tab.hh"
 
 # include <cassert>
 # include <cstdlib> // std::abort
@@ -197,7 +198,7 @@ class compilador_driver;
 
 #line 6 "parser.yy"
 namespace yy {
-#line 201 "parser.tab.hh"
+#line 202 "parser.tab.hh"
 
 
 
@@ -2123,7 +2124,7 @@ switch (yykind)
 
 #line 6 "parser.yy"
 } // yy
-#line 2127 "parser.tab.hh"
+#line 2128 "parser.tab.hh"
 
 
 

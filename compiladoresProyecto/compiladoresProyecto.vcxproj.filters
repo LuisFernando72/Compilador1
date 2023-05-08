@@ -59,6 +59,9 @@
     <ClInclude Include="AnalisisCompilador\AnalisisLexicoh.h">
       <Filter>Archivos de origen</Filter>
     </ClInclude>
+    <ClInclude Include="AnalisisCompilador\location.hh">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FlexTabla\tablaSimbolos.l" />

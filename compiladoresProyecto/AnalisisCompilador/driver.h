@@ -1,9 +1,9 @@
 #ifndef DRIVER
 # define DRIVER
 #include <string>
-# include "parser.tab.hh"
+#include "parser.tab.hh"
 #include <iostream> 
-#include "FlexLexer2.h"
+//#include "FlexLexer2.h"
 #include <Windows.h>
 #include <conio.h>
 #include <stdio.h>
@@ -24,9 +24,10 @@ public:
 	float resultado;
 	void iniciarScanner();
 	void terminarScanner();
+	 
 
-	int parse(const std::string& archivo);
-	
+	int parse(const std::string& archivo); 
+
 	std::string file;
 };
 #endif

@@ -6,8 +6,7 @@
 	#include <Windows.h>
 	#include <string>
 	#include <string.h>
- 
-	using namespace std;
+ 	using namespace std;
 	int nlinea;
 	int yyval;
     int yylineno=0;	 
@@ -16,12 +15,14 @@
 %option outfile="TablaSimbolos.cpp"
 %option case-insensitive
 %option yylineno
+
 %option noyywrap
 
 DIGITO [0-9]+
 LETRA [a-zA-ZñÑ]
 ENTERO {DIGITO}
 REAL {DIGITO}"."{DIGITO}
+COMA ";"
 IDENTIFICADOR {LETRA}({LETRA}|{DIGITO}|"_")*
 DIAGONAL "/"
 TEXTO "\""({LETRA}|{DIGITO}|"_"|\t|\r|\f|\n|" ")*"\""
@@ -39,8 +40,8 @@ string dr = "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresPro
 
 %%
 {CARACTERES}			{return 34;}
+{ENTERO}                {return 10;}
 {SALTO}					yylineno;
-{ENTERO}				{ return 10;}
 {REAL}					{ return 11;}
 "inicio"				{ return 12;}
 "entero"				{ return 12;}
@@ -77,6 +78,6 @@ string dr = "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresPro
 ">="					{ return 32;}
 "=="					{ return 32;}
 "!="					{ return 32;}
-{DELIMITADOR}	{}
-.				{return 99;}
+{DELIMITADOR}			{}
+.						{return 99;}
 %%

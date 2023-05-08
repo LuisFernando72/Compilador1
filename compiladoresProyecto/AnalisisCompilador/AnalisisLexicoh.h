@@ -13,7 +13,7 @@ public:AnalisisLexicoh() {}
 		  float resultado = 0.0;
 		  compilador_driver driver;
 		  int dos = driver.parse(archivo);
-		 
+
 		  if (dos) {
 			 // printf("La entrada es incorrecta\n");
 		  }

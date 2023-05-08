@@ -344,11 +344,11 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[147] =
     {   0,
-        0,    0,   43,   41,   40,    2,   41,   40,   41,   29,
-       30,   26,   24,   28,   25,   15,    3,   27,   34,   33,
+        0,    0,   43,   41,   40,    3,   41,   40,   41,   29,
+       30,   26,   24,   28,   25,   15,    2,   27,   34,   33,
        35,   20,   20,   20,   20,   20,   20,   20,   20,   20,
        20,   20,   31,   32,   39,    0,   22,    0,    0,    0,
-       23,    0,    3,   36,   38,   37,   20,   20,   20,   20,
+       23,    0,    2,   36,   38,   37,   20,   20,   20,   20,
        20,   20,   20,   20,   20,   20,   20,   20,   20,   20,
        12,    0,    1,   23,   23,    4,   20,   20,   20,   20,
        20,   20,   20,   20,   20,   20,   20,   20,   20,    0,
@@ -549,7 +549,7 @@ static const flex_int16_t yy_chk[429] =
 /* Table of booleans, true if rule could match eol. */
 static const flex_int32_t yy_rule_can_match_eol[43] =
     {   0,
-0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     1, 0, 0,     };
 
@@ -569,17 +569,16 @@ static const flex_int32_t yy_rule_can_match_eol[43] =
 	#include <Windows.h>
 	#include <string>
 	#include <string.h>
- 
-	using namespace std;
+ 	using namespace std;
 	int nlinea;
 	int yyval;
-    int yylineno=0;	 
-#line 577 "TablaSimbolos.cpp"
-#line 36 "tablaSimbolos.l"
+    //int yylineno=0;	 
+#line 576 "TablaSimbolos.cpp"
+#line 37 "tablaSimbolos.l"
 int z = 1;
 string dr = "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\boody.txt";
+#line 580 "TablaSimbolos.cpp"
 #line 581 "TablaSimbolos.cpp"
-#line 582 "TablaSimbolos.cpp"
 
 #define INITIAL 0
 
@@ -711,9 +710,9 @@ YY_DECL
 		}
 
 	{
-#line 40 "tablaSimbolos.l"
+#line 41 "tablaSimbolos.l"
 
-#line 716 "TablaSimbolos.cpp"
+#line 715 "TablaSimbolos.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -782,218 +781,218 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 41 "tablaSimbolos.l"
+#line 42 "tablaSimbolos.l"
 {return 34;}
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
-YY_RULE_SETUP
-#line 42 "tablaSimbolos.l"
-yylineno;
-	YY_BREAK
-case 3:
 YY_RULE_SETUP
 #line 43 "tablaSimbolos.l"
-{ return 10;}
+{return 10;}
+	YY_BREAK
+case 3:
+/* rule 3 can match eol */
+YY_RULE_SETUP
+#line 44 "tablaSimbolos.l"
+yylineno;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 44 "tablaSimbolos.l"
+#line 45 "tablaSimbolos.l"
 { return 11;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 45 "tablaSimbolos.l"
+#line 46 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 46 "tablaSimbolos.l"
+#line 47 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 47 "tablaSimbolos.l"
+#line 48 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 48 "tablaSimbolos.l"
+#line 49 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 49 "tablaSimbolos.l"
+#line 50 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 50 "tablaSimbolos.l"
+#line 51 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 51 "tablaSimbolos.l"
+#line 52 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 52 "tablaSimbolos.l"
+#line 53 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 53 "tablaSimbolos.l"
+#line 54 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 54 "tablaSimbolos.l"
+#line 55 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 55 "tablaSimbolos.l"
+#line 56 "tablaSimbolos.l"
 { return 14;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 56 "tablaSimbolos.l"
+#line 57 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 57 "tablaSimbolos.l"
+#line 58 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 58 "tablaSimbolos.l"
+#line 59 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 59 "tablaSimbolos.l"
+#line 60 "tablaSimbolos.l"
 { return 12;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 60 "tablaSimbolos.l"
+#line 61 "tablaSimbolos.l"
 { return 13;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 61 "tablaSimbolos.l"
+#line 62 "tablaSimbolos.l"
 { return 33;}
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
 YY_RULE_SETUP
-#line 62 "tablaSimbolos.l"
+#line 63 "tablaSimbolos.l"
 { return 15;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 63 "tablaSimbolos.l"
+#line 64 "tablaSimbolos.l"
 { return 16;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 64 "tablaSimbolos.l"
+#line 65 "tablaSimbolos.l"
 { return 20;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 65 "tablaSimbolos.l"
+#line 66 "tablaSimbolos.l"
 { return 21;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 66 "tablaSimbolos.l"
+#line 67 "tablaSimbolos.l"
 { return 22;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 67 "tablaSimbolos.l"
+#line 68 "tablaSimbolos.l"
 { return 23;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 68 "tablaSimbolos.l"
+#line 69 "tablaSimbolos.l"
 { return 24;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 69 "tablaSimbolos.l"
+#line 70 "tablaSimbolos.l"
 { return 25;}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 70 "tablaSimbolos.l"
+#line 71 "tablaSimbolos.l"
 { return 26;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 71 "tablaSimbolos.l"
+#line 72 "tablaSimbolos.l"
 { return 27;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 72 "tablaSimbolos.l"
+#line 73 "tablaSimbolos.l"
 { return 28;}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 73 "tablaSimbolos.l"
+#line 74 "tablaSimbolos.l"
 { return 29;}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 74 "tablaSimbolos.l"
+#line 75 "tablaSimbolos.l"
 { return 30;}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 75 "tablaSimbolos.l"
+#line 76 "tablaSimbolos.l"
 { return 31;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 76 "tablaSimbolos.l"
+#line 77 "tablaSimbolos.l"
 { return 32;}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 77 "tablaSimbolos.l"
+#line 78 "tablaSimbolos.l"
 { return 32;}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 78 "tablaSimbolos.l"
+#line 79 "tablaSimbolos.l"
 { return 32;}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 79 "tablaSimbolos.l"
+#line 80 "tablaSimbolos.l"
 { return 32;}
 	YY_BREAK
 case 40:
 /* rule 40 can match eol */
 YY_RULE_SETUP
-#line 80 "tablaSimbolos.l"
+#line 81 "tablaSimbolos.l"
 {}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 81 "tablaSimbolos.l"
+#line 82 "tablaSimbolos.l"
 {return 99;}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 82 "tablaSimbolos.l"
+#line 83 "tablaSimbolos.l"
 ECHO;
 	YY_BREAK
-#line 996 "TablaSimbolos.cpp"
+#line 995 "TablaSimbolos.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1940,30 +1939,30 @@ static int yy_flex_strlen (const char * s )
 }
 #endif
 
-void *yyalloc (yy_size_t  size )
-{
-			return malloc(size);
-}
+//void *yyalloc (yy_size_t  size )
+//{
+//			return malloc(size);
+//}
 
-void *yyrealloc  (void * ptr, yy_size_t  size )
-{
-		
-	/* The cast to (char *) in the following accommodates both
-	 * implementations that use char* generic pointers, and those
-	 * that use void* generic pointers.  It works with the latter
-	 * because both ANSI C and C++ allow castless assignment from
-	 * any pointer type to void*, and deal with argument conversions
-	 * as though doing an assignment.
-	 */
-	return realloc(ptr, size);
-}
+//void *yyrealloc  (void * ptr, yy_size_t  size )
+//{
+//		
+//	/* The cast to (char *) in the following accommodates both
+//	 * implementations that use char* generic pointers, and those
+//	 * that use void* generic pointers.  It works with the latter
+//	 * because both ANSI C and C++ allow castless assignment from
+//	 * any pointer type to void*, and deal with argument conversions
+//	 * as though doing an assignment.
+//	 */
+//	return realloc(ptr, size);
+//}
 
-void yyfree (void * ptr )
-{
-			free( (char *) ptr );	/* see yyrealloc() for (char *) cast */
-}
+//void yyfree (void * ptr )
+//{
+//			free( (char *) ptr );	/* see yyrealloc() for (char *) cast */
+//}
 
 #define YYTABLES_NAME "yytables"
 
-#line 82 "tablaSimbolos.l"
+#line 83 "tablaSimbolos.l"
 

@@ -1,7 +1,20 @@
-evaluar(1+1);
-evaluar(1+1*2);
-evaluar(-(1+1*6/3-5+7));
-evaluar(-(1+1*6/3-5+1*-2));
-evaluar(-(1+1));
-
-	//	cout << "\nid: " << contador << " linea: " << lexer->lineno() << " token: " << lexer->YYText() << " tipo: " << token << " retorno: " << retorno << " Leng: " << lexer->YYLeng() << endl;
+int suma(entero c, entero 
+d)
+{
+Retorno c + d;
+}
+Inicio() { 
+entero a, b, c; 
+mostrar(“Valores”); 
+a:= 10; 
+b:= 20; 
+c= a * b; 
+mostrar(c);
+mostrar(suma(a, b));
+si (a == b) 
+mostrar(“iguales”); 
+sino mostrar(“diferentes”);
+para (a=0; a<10; a++){
+mostrar(a); 
+}
+} 

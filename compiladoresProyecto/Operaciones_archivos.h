@@ -7,6 +7,9 @@
 #include <string.h>
 #include "Operaciones_archivos.h"
 #include <stdio.h> 
+#include <cstring>
+#include <map>
+ 
 
 
 #pragma warning(disable:4996)
@@ -93,5 +96,40 @@ public: Operaciones_archivos() {}
 
 		  return 1;
 	  }
+	  map<int, string> mapa;
+
+	  string Hash(int clave) {
+		  string retorno;
+		  mapa[10] = "Numero Entero";
+		  mapa[11] = "Numero Real";
+		  mapa[12] = "Palabra Reservada";
+		  mapa[13] = "Identificador";
+		  mapa[14] = "Signo Division";
+		  mapa[15] = "Texto";
+		  mapa[16] = "Comentario";
+		  mapa[20] = "Suma";
+		  mapa[21] = "Resta";
+		  mapa[22] = "Multiplicacion";
+		  mapa[23] = "Punto y Coma";
+		  mapa[24] = "Coma";
+		  mapa[25] = "Parentesis Abierto";
+		  mapa[26] = "Parentesis Cerrado";
+		  mapa[27] = "Llave Abierta";
+		  mapa[28] = "Llave Cerrada";
+		  mapa[29] = "Signo Igual";
+		  mapa[30] = "Signo Menor";
+		  mapa[31] = "Signo Mayor";
+		  mapa[32] = "Operador Logico";
+		  mapa[99] = "ERROR LEXICO";
+		  mapa[33] = "Tipo Fecha";
+		  mapa[34] = "Tipo Caracter";
+
+		  auto search = mapa.find(clave);
+		  if (search != mapa.end()) {
+			  retorno = search->second;
+		  }
+		  return retorno;
+	  }
+
 
 };
