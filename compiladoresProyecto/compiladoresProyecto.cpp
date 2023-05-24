@@ -14,6 +14,7 @@
 #include <vector>
 #include <list>
 #include "AnalisisCompilador/AnalisisLexicoh.h"
+
 using namespace std;
 
 //declarando funciones
@@ -79,25 +80,26 @@ int LeerLexer() {
 				if (archivo.fail())
 				{
 					gotoxy(70, 9); cout << GREEN << "Analizando el archivo";
-					//	cargando();
+						cargando();
 					gotoxy(25, 12); cout << "Error al abrir el archivo :(\n";
 					_getch();
 					menu();
 				}
 				else {
 					gotoxy(70, 9); cout << GREEN << "Analizando el archivo";
-					//cargando();
+					cargando();
 					op.eliminarArchivo("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\eSintactios.txt");
 
 					ah.IniciarAnalisis(direccionArchivo);
 					int leer3 = op.InsertarHTML("Tabla_errores_sintacticos.html", "header3.txt", "eSintactios.txt", "footer.txt");
-					gotoxy(25, 22); cout << BLACK << "C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_errores_sintacticos.html\n\n";
-					gotoxy(25, 21); cout << BLUE << "ANALISIS SINTACTICO:";
+					cout << RED << "\n\t\tANALISIS SINTACTICO:";
+					cout << BLACK << "\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_errores_sintacticos.html\n\n";
+				 	  
 				}
 			}
 
 		}
-		gotoxy(25, 23); cout << BLACK << "Desea volver a intentarlo[s/n]: ";
+		  cout << BLACK << "\n\t\tDesea volver a intentarlo[s/n]: ";
 		cin >> n;
 	} while ((n == 's') || (n == 'S'));
 	if ((n == 'n') || (n == 'N')) {
@@ -106,11 +108,6 @@ int LeerLexer() {
 
 	return 1;
 }
-
-
-
- 
-
 
 int main()
 {

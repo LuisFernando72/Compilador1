@@ -22,7 +22,8 @@
             <tr>
               <th>Id <span class="icon-arrow">&UpArrow;</span></th>
               <th>Error <span class="icon-arrow">&UpArrow;</span></th>
-              <th>Linea <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Fila <span class="icon-arrow">&UpArrow;</span></th>
+		<th>Columna <span class="icon-arrow">&UpArrow;</span></th>
               <th>Detalles <span class="icon-arrow">&UpArrow;</span></th>
               
             </tr>

@@ -17,19 +17,14 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\scanner.cpp(104): message : vea la definición anterior de 'UINT16_MAX'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h(59,1): warning C4005: 'UINT32_MAX': redefinición de macro
 C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\scanner.cpp(107): message : vea la definición anterior de 'UINT32_MAX'
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\lexico.l(299,50): warning C4244: 'argumento': conversión de 'double' a 'const float'; posible pérdida de datos
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(774,1): warning C4065: la instrucción switch contiene etiquetas 'default' pero no etiquetas 'case'
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(765): message : al compilar la función del miembro clase plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)"
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(758): message : Vea la referencia a la creación de una instancia de la función plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)" que se está compilando
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(889): message : Vea la referencia a la creación de una instancia de clase plantilla "yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>" que se está compilando
-  compiladoresProyecto.cpp
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(774,1): warning C4065: la instrucción switch contiene etiquetas 'default' pero no etiquetas 'case'
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(765): message : al compilar la función del miembro clase plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)"
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(758): message : Vea la referencia a la creación de una instancia de la función plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)" que se está compilando
-C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(889): message : Vea la referencia a la creación de una instancia de clase plantilla "yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>" que se está compilando
+C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\lexico.l(306,50): warning C4244: 'argumento': conversión de 'double' a 'const float'; posible pérdida de datos
+C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(772,1): warning C4065: la instrucción switch contiene etiquetas 'default' pero no etiquetas 'case'
+C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(763): message : al compilar la función del miembro clase plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)"
+C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(756): message : Vea la referencia a la creación de una instancia de la función plantilla "void yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>::clear(void)" que se está compilando
+C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\parser.tab.hh(887): message : Vea la referencia a la creación de una instancia de clase plantilla "yy::compilador_parser::basic_symbol<yy::compilador_parser::by_kind>" que se está compilando
   Generando código
-  16 of 727 functions ( 2.2%) were compiled, the rest were copied from previous compilation.
+  3 of 758 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    38 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   compiladoresProyecto.vcxproj -> C:\Users\Luis Fernando Paxel\Music\PROYECTO_FN\compiladoresProyecto\x64\Release\compiladoresProyecto.exe

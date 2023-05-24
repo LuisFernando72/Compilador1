@@ -587,40 +587,38 @@ namespace yy {
         S_TEXTO = 36,                            // "texto"
         S_COMENTARIO = 37,                       // "comentario"
         S_YYACCEPT = 38,                         // $accept
-        S_META = 39,                             // META
-        S_A = 40,                                // A
-        S_I = 41,                                // I
-        S_B = 42,                                // B
-        S_F = 43,                                // F
-        S_C = 44,                                // C
-        S_D = 45,                                // D
-        S_E = 46,                                // E
-        S_R = 47,                                // R
-        S_P = 48,                                // P
-        S_G = 49,                                // G
-        S_K = 50,                                // K
-        S_H = 51,                                // H
-        S_Q = 52,                                // Q
-        S_J = 53,                                // J
-        S_L = 54,                                // L
-        S_O = 55,                                // O
-        S_M = 56,                                // M
-        S_N = 57,                                // N
-        S_S = 58,                                // S
-        S_T = 59,                                // T
-        S_U = 60,                                // U
-        S_V = 61,                                // V
-        S_W = 62,                                // W
-        S_X = 63,                                // X
-        S_Y = 64,                                // Y
-        S_Z = 65,                                // Z
-        S_AA = 66,                               // AA
-        S_AB = 67,                               // AB
-        S_AC = 68,                               // AC
-        S_AD = 69,                               // AD
-        S_AE = 70,                               // AE
-        S_AF = 71,                               // AF
-        S_AG = 72                                // AG
+        S_I = 39,                                // I
+        S_B = 40,                                // B
+        S_F = 41,                                // F
+        S_C = 42,                                // C
+        S_D = 43,                                // D
+        S_E = 44,                                // E
+        S_R = 45,                                // R
+        S_P = 46,                                // P
+        S_G = 47,                                // G
+        S_K = 48,                                // K
+        S_H = 49,                                // H
+        S_Q = 50,                                // Q
+        S_J = 51,                                // J
+        S_L = 52,                                // L
+        S_O = 53,                                // O
+        S_M = 54,                                // M
+        S_N = 55,                                // N
+        S_S = 56,                                // S
+        S_T = 57,                                // T
+        S_U = 58,                                // U
+        S_V = 59,                                // V
+        S_W = 60,                                // W
+        S_X = 61,                                // X
+        S_Y = 62,                                // Y
+        S_Z = 63,                                // Z
+        S_AA = 64,                               // AA
+        S_AB = 65,                               // AB
+        S_AC = 66,                               // AC
+        S_AD = 67,                               // AD
+        S_AE = 68,                               // AE
+        S_AF = 69,                               // AF
+        S_AG = 70                                // AG
       };
     };
 
@@ -1894,9 +1892,9 @@ switch (yykind)
     /// Constants.
     enum
     {
-      yylast_ = 300,     ///< Last index in yytable_.
-      yynnts_ = 35,  ///< Number of nonterminal symbols.
-      yyfinal_ = 15 ///< Termination state number.
+      yylast_ = 299,     ///< Last index in yytable_.
+      yynnts_ = 33,  ///< Number of nonterminal symbols.
+      yyfinal_ = 13 ///< Termination state number.
     };
 
 
@@ -2124,7 +2122,7 @@ switch (yykind)
 
 #line 6 "parser.yy"
 } // yy
-#line 2128 "parser.tab.hh"
+#line 2126 "parser.tab.hh"
 
 
 

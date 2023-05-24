@@ -29,11 +29,12 @@ class compilador_driver;
 #include <fstream>
 #include <string>
 #include <string.h>
+#include <sstream>
 }
+
 %define api.token.prefix {TOK_}
 
 //Listadode Terminales
-
 %token <std::string>INICIO "inicio"
 %token <std::string>ENTERO "entero"
 %token <std::string>CARACTER "caracter"
@@ -74,7 +75,7 @@ class compilador_driver;
 %token FIN 0 "eof"
 
 //Listado de No Terminales
-%type A
+ 
 %type B
 %type C
 %type I
@@ -94,16 +95,13 @@ class compilador_driver;
 %type O
 
  
-%printer {yyoutput << $$; } <*>;
+%printer { yyo << $$; } <*>;
 
 %%
-%start META;
+ 
+ 
 
-META : A  
-
-A: I  
-
-I: "inicio" "(" ")" "{" M "}"		
+I: "inicio" "(" ")" "{" M "}"	 
    | B "inicio" "(" ")" "{" M "}"
    | "inicio" "(" ")" "{" M "}" B
    | B "inicio" "(" ")" "{" M "}" B;
@@ -242,13 +240,48 @@ AG: L
    
  
 %%
+string leerArchivo();
+
 
 void yy::compilador_parser::error(const location_type& lugar, const std::string& lexema)
 {
- std::cout << "Error Sintactico " << lugar <<" "<< lexema << std::endl;
-ofstream pagina;
-pagina.open("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\eSintactios.txt", ios::app);
-pagina <<"<tr>"<<"<td>1</td>"<<"<td>Error Sintactico</td>"<<"<td>"<< lugar<<"</td>"<<"<td>"<<lexema<<"<td>"<<"</tr>";
-pagina.close();
+  
+	string nombreArchivo = "FilaColumna.txt", fila, columna, cad = "";
+	ofstream archivo;
+ 
+	archivo.open(nombreArchivo.c_str(), fstream::out);
+	archivo.clear();
+	archivo << lugar;
+	archivo.close();
+
+	cad = leerArchivo();
+	stringstream cc(cad);
+	getline(cc, fila, '.');
+	getline(cc, columna, '.');
+
+	ofstream pagina;
+
+
+	pagina.open("C:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_staticos\\eSintactios.txt", ios::app);
+ 
+	pagina << "<tr class= \"error\" >" << "<td>1</td>" << "<td>Error Sintactico</td>" << "<td>" << fila << "</td>"<< "<td>" << columna << "</td>" << "<td>" << lexema << "<td>" << "</tr>";
+	pagina.close();
 		  
+}
+
+string leerArchivo() {
+	string cadena;
+	ifstream datos("FilaColumna.txt");
+	 
+	if (datos.fail()) {
+		cout << "Texto entrada Estructura.txt no existe" << endl;
+	}
+	else {
+		while (!datos.eof()) {
+		 
+			getline(datos, cadena); //con esta funcion tomas la linea(limitada por \n)
+
+		}
+	}
+	return cadena;
 }

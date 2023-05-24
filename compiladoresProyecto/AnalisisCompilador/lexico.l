@@ -11,6 +11,7 @@
 #include "parser.tab.hh"
 #include "FlexLexer2.h"
 #include "../Operaciones_archivos.h"
+#include "../colors.h"
 #undef yywrap
 #define yywrap() 1
 static yy::location loc;
@@ -32,12 +33,16 @@ ENTERO {DIGITO}
 REAL {DIGITO}"."{DIGITO}
 IDENTIFICADOR {LETRA}({LETRA}|{DIGITO}|"_")*
 DIAGONAL "/"
+DOSP ":"
+INTER "?"
 COMENTARIO {DIAGONAL}{DIAGONAL}({LETRA}|{DIGITO}|"_"|" ")*
-TEXTO "\""({LETRA}|{DIGITO}|"_"|\t|\r|\f|\n|" ")*"\""
+TEXTO "\""({LETRA}|{DIGITO}|{DOSP}|{INTER}|"_"|:|\t|\r|\f|\n|" ")*"\""
 FECHA "'"{DIGITO}{DIGITO}{DIAGONAL}{DIGITO}{DIGITO}{DIAGONAL}{DIGITO}{DIGITO}{DIGITO}{DIGITO}"'"
 CARACTERES "'"{LETRA}"'"
 blank [ \t\r]
 DELIMITADOR [\t\r\f\n" "]
+id    [a-zA-Z][a-zA-Z_0-9]*
+int   [0-9]+
 
 %%
 %{
@@ -48,9 +53,9 @@ DELIMITADOR [\t\r\f\n" "]
 %}
 {blank}+                loc.step ();
 \n+                     loc.lines (yyleng); loc.step ();
+ 
 
 "inicio"			  {
-cout<<endl<<yytext<<" "<<loc<< " "<<yylineno<<endl;
 string s;
 s.push_back(yyleng);
 lleva= yytext + a + to_string(12) + a + s + a + to_string (yylineno);
@@ -65,6 +70,8 @@ return yy::compilador_parser::make_INICIO(yytext,loc);
   tokens.push_back(lleva);
   return yy::compilador_parser::make_ENTERO(yytext,loc);
   }
+
+   
 
 "caracter"			{
   string s;
@@ -332,7 +339,8 @@ return yy::compilador_parser::make_INICIO(yytext,loc);
 
 {DELIMITADOR}   {}
 .               {
-  printf("ERROR LEXICO %s\n",yytext);
+  throw yy::compilador_parser::syntax_error
+  (loc, "caracter invalido: " + std::string(yytext));
   }
 
 <<EOF>>		{return yy::compilador_parser::make_FIN(loc);}
@@ -402,13 +410,13 @@ void ruta(string file) {
 	int leer2 = op.InsertarHTML("Analisis_lexicos.html", "header.txt", "analisis_lexico.txt", "footer.txt");
 
 if ((leer1 == 1) && (leer2 == 1)) {
-		  cout << "\n\n\t\tANALISIS TERMINADO CORRECTAMENTE!!";
-	      cout <<   "\n\t\tANALISIS LEXICO:";
-		  cout <<   "\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_analis_lexico.html";
-		  cout <<   "\n\t\tERRORES LEXICO:";
-		  cout <<   "\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_errores_lexico.html\n\n";
-		  cout <<   "\n\t\tTABLA DE SIMBOLOS:";
-		  cout <<   "\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_simbolos.html\n\n";
+		 cout <<RED<<"\n\n\t\tANALISIS TERMINADO CORRECTAMENTE!!\n";
+	      cout <<RED<<"\n\t\tANALISIS LEXICO:";
+		  cout <<BLACK<<"\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Analisis_lexicos.html\n";
+		  cout <<RED<<"\n\t\tERRORES LEXICO:";
+		  cout <<BLACK<<"\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Errores_lexicos.html\n";
+		  cout <<RED<<"\n\t\tTABLA DE SIMBOLOS:";
+		  cout <<BLACK<<"\n\t\tC:\\Users\\Luis Fernando Paxel\\Music\\PROYECTO_FN\\compiladoresProyecto\\Archivos\\Archivos_html\\Tabla_simbolos.html\n\n";
 
 	}
 }
